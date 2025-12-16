@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include app data in backup -->
+    <include domain="sharedpref" path="habit_tracker_prefs.xml"/>
+</full-backup-content>

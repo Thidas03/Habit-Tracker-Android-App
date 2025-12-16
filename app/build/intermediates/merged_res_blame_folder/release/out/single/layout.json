@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/item_mood.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/item_mood.xml"
+    },
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/fragment_mood.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/fragment_mood.xml"
+    },
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/fragment_settings.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/fragment_charts.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/fragment_charts.xml"
+    },
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/widget_habit_progress.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/widget_habit_progress.xml"
+    },
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/dialog_add_habit.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/dialog_add_habit.xml"
+    },
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/dialog_add_mood.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/dialog_add_mood.xml"
+    },
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/fragment_habits.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/fragment_habits.xml"
+    },
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/activity_main.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/item_habit.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/item_habit.xml"
+    },
+    {
+        "merged": "com.example.habbittracker.app-mergeReleaseResources-57:/layout/dialog_hydration_settings.xml",
+        "source": "com.example.habbittracker.app-main-59:/layout/dialog_hydration_settings.xml"
+    }
+]

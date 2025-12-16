@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.4" type="incidents">
+
+    <incident
+        id="VectorPath"
+        severity="warning"
+        message="Very long vector path (904 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/ic_settings.xml"
+            line="9"
+            column="25"
+            startOffset="309"
+            endLine="9"
+            endColumn="929"
+            endOffset="1213"/>
+    </incident>
+
+    <incident
+        id="FragmentTagUsage"
+        severity="warning"
+        message="Replace the &lt;fragment> tag with FragmentContainerView.">
+        <fix-replace
+            description="Replace with androidx.fragment.app.FragmentContainerView"
+            oldString="fragment"
+            replacement="androidx.fragment.app.FragmentContainerView"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="21"
+            column="6"
+            startOffset="923"
+            endLine="21"
+            endColumn="14"
+            endOffset="931"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;1&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_add_habit.xml"
+            line="52"
+            column="13"
+            startOffset="2161"
+            endLine="52"
+            endColumn="29"
+            endOffset="2177"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;😊&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_add_mood.xml"
+            line="40"
+            column="13"
+            startOffset="1466"
+            endLine="40"
+            endColumn="30"
+            endOffset="1483"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Happy&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_add_mood.xml"
+            line="49"
+            column="13"
+            startOffset="1787"
+            endLine="49"
+            endColumn="33"
+            endOffset="1807"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_hydration_settings.xml"
+            line="16"
+            column="10"
+            startOffset="572"
+            endLine="16"
+            endColumn="19"
+            endOffset="581"/>
+    </incident>
+
+    <incident
+        id="UseSwitchCompatOrMaterialXml"
+        severity="warning"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_hydration_settings.xml"
+            line="32"
+            column="9"
+            startOffset="1161"
+            endLine="35"
+            endColumn="52"
+            endOffset="1323"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;60&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_hydration_settings.xml"
+            line="50"
+            column="13"
+            startOffset="1871"
+            endLine="50"
+            endColumn="30"
+            endOffset="1888"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Minimum interval: 15 minutes&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/dialog_hydration_settings.xml"
+            line="58"
+            column="9"
+            startOffset="2113"
+            endLine="58"
+            endColumn="52"
+            endOffset="2156"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;No mood data available&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_charts.xml"
+            line="46"
+            column="21"
+            startOffset="1893"
+            endLine="46"
+            endColumn="58"
+            endOffset="1930"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;No habit data available&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_charts.xml"
+            line="86"
+            column="21"
+            startOffset="3574"
+            endLine="86"
+            endColumn="59"
+            endOffset="3612"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_charts.xml"
+            line="117"
+            column="18"
+            startOffset="4810"
+            endLine="117"
+            endColumn="30"
+            endOffset="4822"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;0&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_charts.xml"
+            line="133"
+            column="29"
+            startOffset="5564"
+            endLine="133"
+            endColumn="45"
+            endOffset="5580"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Mood Entries&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_charts.xml"
+            line="141"
+            column="29"
+            startOffset="5969"
+            endLine="141"
+            endColumn="56"
+            endOffset="5996"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;0&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_charts.xml"
+            line="158"
+            column="29"
+            startOffset="6740"
+            endLine="158"
+            endColumn="45"
+            endOffset="6756"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Habits Completed&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_charts.xml"
+            line="166"
+            column="29"
+            startOffset="7144"
+            endLine="166"
+            endColumn="60"
+            endOffset="7175"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Progress: 0/0&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_habits.xml"
+            line="29"
+            column="17"
+            startOffset="1169"
+            endLine="29"
+            endColumn="45"
+            endOffset="1197"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_habits.xml"
+            line="58"
+            column="6"
+            startOffset="2259"
+            endLine="58"
+            endColumn="75"
+            endOffset="2328"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_habits.xml"
+            line="82"
+            column="10"
+            startOffset="3234"
+            endLine="82"
+            endColumn="19"
+            endOffset="3243"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;No habits yet&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_habits.xml"
+            line="92"
+            column="13"
+            startOffset="3588"
+            endLine="92"
+            endColumn="41"
+            endOffset="3616"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Tap the + button to add your first habit&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_habits.xml"
+            line="100"
+            column="13"
+            startOffset="3894"
+            endLine="100"
+            endColumn="68"
+            endOffset="3949"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Today&apos;s mood: 😊&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_mood.xml"
+            line="29"
+            column="17"
+            startOffset="1172"
+            endLine="29"
+            endColumn="48"
+            endOffset="1203"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Track your daily emotions&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_mood.xml"
+            line="38"
+            column="17"
+            startOffset="1545"
+            endLine="38"
+            endColumn="57"
+            endOffset="1585"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;📱 Shake to Add Mood&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_mood.xml"
+            line="53"
+            column="9"
+            startOffset="2126"
+            endLine="53"
+            endColumn="44"
+            endOffset="2161"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_mood.xml"
+            line="70"
+            column="6"
+            startOffset="2812"
+            endLine="70"
+            endColumn="75"
+            endOffset="2881"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_mood.xml"
+            line="94"
+            column="10"
+            startOffset="3787"
+            endLine="94"
+            endColumn="19"
+            endOffset="3796"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;No mood entries yet&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_mood.xml"
+            line="104"
+            column="13"
+            startOffset="4139"
+            endLine="104"
+            endColumn="47"
+            endOffset="4173"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Tap the + button to log your first mood&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_mood.xml"
+            line="112"
+            column="13"
+            startOffset="4451"
+            endLine="112"
+            endColumn="67"
+            endOffset="4505"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="32"
+            column="18"
+            startOffset="1263"
+            endLine="32"
+            endColumn="27"
+            endOffset="1272"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;60 minutes&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="67"
+            column="25"
+            startOffset="2948"
+            endLine="67"
+            endColumn="50"
+            endOffset="2973"/>
+    </incident>
+
+    <incident
+        id="UseSwitchCompatOrMaterialXml"
+        severity="warning"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="73"
+            column="17"
+            startOffset="3152"
+            endLine="77"
+            endColumn="49"
+            endOffset="3387"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="102"
+            column="18"
+            startOffset="4304"
+            endLine="102"
+            endColumn="27"
+            endOffset="4313"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="118"
+            column="18"
+            startOffset="5011"
+            endLine="118"
+            endColumn="27"
+            endOffset="5020"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="147"
+            column="18"
+            startOffset="6144"
+            endLine="147"
+            endColumn="27"
+            endOffset="6153"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="163"
+            column="18"
+            startOffset="6832"
+            endLine="163"
+            endColumn="27"
+            endOffset="6841"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="192"
+            column="18"
+            startOffset="7976"
+            endLine="192"
+            endColumn="27"
+            endOffset="7985"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="208"
+            column="18"
+            startOffset="8673"
+            endLine="208"
+            endColumn="27"
+            endOffset="8682"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="237"
+            column="18"
+            startOffset="9817"
+            endLine="237"
+            endColumn="27"
+            endOffset="9826"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="253"
+            column="18"
+            startOffset="10515"
+            endLine="253"
+            endColumn="27"
+            endOffset="10524"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="281"
+            column="18"
+            startOffset="11600"
+            endLine="281"
+            endColumn="27"
+            endOffset="11609"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                dot="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/fragment_settings.xml"
+            line="297"
+            column="18"
+            startOffset="12285"
+            endLine="297"
+            endColumn="27"
+            endOffset="12294"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Habit Name&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_habit.xml"
+            line="32"
+            column="21"
+            startOffset="1219"
+            endLine="32"
+            endColumn="46"
+            endOffset="1244"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Description&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_habit.xml"
+            line="42"
+            column="21"
+            startOffset="1677"
+            endLine="42"
+            endColumn="47"
+            endOffset="1703"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Target: 1 times/day&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_habit.xml"
+            line="51"
+            column="21"
+            startOffset="2094"
+            endLine="51"
+            endColumn="55"
+            endOffset="2128"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Pending&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_habit.xml"
+            line="64"
+            column="17"
+            startOffset="2620"
+            endLine="64"
+            endColumn="39"
+            endOffset="2642"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Mark Complete&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_habit.xml"
+            line="85"
+            column="17"
+            startOffset="3456"
+            endLine="85"
+            endColumn="45"
+            endOffset="3484"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Delete&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_habit.xml"
+            line="93"
+            column="17"
+            startOffset="3838"
+            endLine="93"
+            endColumn="38"
+            endOffset="3859"/>
+    </incident>
+
+    <incident
+        id="UselessParent"
+        severity="warning"
+        message="This `LinearLayout` layout or its `LinearLayout` parent is unnecessary">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_mood.xml"
+            line="17"
+            column="10"
+            startOffset="618"
+            endLine="17"
+            endColumn="22"
+            endOffset="630"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;😊&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_mood.xml"
+            line="26"
+            column="17"
+            startOffset="975"
+            endLine="26"
+            endColumn="34"
+            endOffset="992"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Dec 15, 2023&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_mood.xml"
+            line="46"
+            column="25"
+            startOffset="1787"
+            endLine="46"
+            endColumn="52"
+            endOffset="1814"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;14:30&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_mood.xml"
+            line="55"
+            column="25"
+            startOffset="2220"
+            endLine="55"
+            endColumn="45"
+            endOffset="2240"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Feeling great today!&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/item_mood.xml"
+            line="66"
+            column="21"
+            startOffset="2669"
+            endLine="66"
+            endColumn="56"
+            endOffset="2704"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Today&apos;s Progress&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/widget_habit_progress.xml"
+            line="14"
+            column="9"
+            startOffset="518"
+            endLine="14"
+            endColumn="40"
+            endOffset="549"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;0/0&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/widget_habit_progress.xml"
+            line="25"
+            column="9"
+            startOffset="911"
+            endLine="25"
+            endColumn="27"
+            endOffset="929"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;0%&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/widget_habit_progress.xml"
+            line="36"
+            column="9"
+            startOffset="1293"
+            endLine="36"
+            endColumn="26"
+            endOffset="1310"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="64"
+            column="28"
+            startOffset="2800"
+            endLine="64"
+            endColumn="38"
+            endOffset="2810"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="78"
+            column="35"
+            startOffset="3326"
+            endLine="78"
+            endColumn="45"
+            endOffset="3336"/>
+    </incident>
+
+    <incident
+        id="BadPeriodicWorkRequestEnqueue"
+        severity="warning"
+        message="Use `enqueueUniquePeriodicWork()` instead of `enqueue()`">
+        <location
+            file="$GRADLE_USER_HOME/caches/transforms-3/bdf220690fb1e59fc81d6a15de406a8c/transformed/work-runtime-2.9.0/jars/classes.jar!/androidx/work/WorkManager.class"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/habits/HabitsAdapter.kt"
+            line="44"
+            column="42"
+            startOffset="1551"
+            endLine="44"
+            endColumn="80"
+            endOffset="1589"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/habits/HabitsAdapter.kt"
+            line="44"
+            column="43"
+            startOffset="1552"
+            endLine="44"
+            endColumn="51"
+            endOffset="1560"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/habits/HabitsAdapter.kt"
+            line="44"
+            column="69"
+            startOffset="1578"
+            endLine="44"
+            endColumn="79"
+            endOffset="1588"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/habits/HabitsAdapter.kt"
+            line="66"
+            column="44"
+            startOffset="2666"
+            endLine="66"
+            endColumn="55"
+            endOffset="2677"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/habits/HabitsAdapter.kt"
+            line="69"
+            column="44"
+            startOffset="2800"
+            endLine="69"
+            endColumn="57"
+            endOffset="2813"/>
+    </incident>
+
+    <incident
+        id="StringFormatInvalid"
+        severity="error"
+        message="Format string &apos;`progress`&apos; is not a valid format string so it should not be passed to `String.format`">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/habits/HabitsFragment.kt"
+            line="171"
+            column="41"
+            startOffset="6533"
+            endLine="175"
+            endColumn="10"
+            endOffset="6635"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="22"
+            column="5"
+            startOffset="914"
+            endLine="22"
+            endColumn="46"
+            endOffset="955"
+            message="This definition does not require arguments"/>
+    </incident>
+
+    <incident
+        id="StringFormatInvalid"
+        severity="error"
+        message="Format string &apos;`progress`&apos; is not a valid format string so it should not be passed to `String.format`">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/habits/HabitsFragment.kt"
+            line="171"
+            column="41"
+            startOffset="6533"
+            endLine="175"
+            endColumn="10"
+            endOffset="6635"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="22"
+            column="5"
+            startOffset="914"
+            endLine="22"
+            endColumn="46"
+            endOffset="955"
+            message="This definition does not require arguments"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/mood/MoodFragment.kt"
+            line="171"
+            column="49"
+            startOffset="6078"
+            endLine="171"
+            endColumn="68"
+            endOffset="6097"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/mood/MoodFragment.kt"
+            line="187"
+            column="52"
+            startOffset="6910"
+            endLine="187"
+            endColumn="88"
+            endOffset="6946"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/mood/MoodFragment.kt"
+            line="187"
+            column="53"
+            startOffset="6911"
+            endLine="187"
+            endColumn="67"
+            endOffset="6925"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/mood/MoodFragment.kt"
+            line="189"
+            column="53"
+            startOffset="7020"
+            endLine="189"
+            endColumn="73"
+            endOffset="7040"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/settings/SettingsFragment.kt"
+            line="91"
+            column="54"
+            startOffset="3085"
+            endLine="91"
+            endColumn="73"
+            endOffset="3104"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/habbittracker/ui/settings/SettingsFragment.kt"
+            line="91"
+            column="64"
+            startOffset="3095"
+            endLine="91"
+            endColumn="72"
+            endOffset="3103"/>
+    </incident>
+
+    <incident
+        id="BadPeriodicWorkRequestEnqueue"
+        severity="warning"
+        message="Use `enqueueUniquePeriodicWork()` instead of `enqueue()`">
+        <location
+            file="$GRADLE_USER_HOME/caches/transforms-3/bdf220690fb1e59fc81d6a15de406a8c/transformed/work-runtime-2.9.0/jars/classes.jar!/androidx/work/WorkManager.class"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="34"
+            replacement="36"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="13"
+            column="9"
+            startOffset="261"
+            endLine="13"
+            endColumn="23"
+            endOffset="275"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.17.0">
+        <fix-replace
+            description="Change to 1.17.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.17.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="42"
+            column="21"
+            startOffset="930"
+            endLine="42"
+            endColumn="50"
+            endOffset="959"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1">
+        <fix-replace
+            description="Change to 1.7.1"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="43"
+            column="21"
+            startOffset="982"
+            endLine="43"
+            endColumn="55"
+            endOffset="1016"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.10.0 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.10.0"
+            replacement="1.13.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="44"
+            column="21"
+            startOffset="1039"
+            endLine="44"
+            endColumn="64"
+            endOffset="1082"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1">
+        <fix-replace
+            description="Change to 2.2.1"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="45"
+            column="21"
+            startOffset="1105"
+            endLine="45"
+            endColumn="69"
+            endOffset="1153"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.7.0 is available: 2.9.4">
+        <fix-replace
+            description="Change to 2.9.4"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.9.4"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="46"
+            column="21"
+            startOffset="1176"
+            endLine="46"
+            endColumn="68"
+            endOffset="1223"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.7.0 is available: 2.9.4">
+        <fix-replace
+            description="Change to 2.9.4"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.9.4"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="47"
+            column="21"
+            startOffset="1246"
+            endLine="47"
+            endColumn="69"
+            endOffset="1294"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-fragment-ktx than 2.7.5 is available: 2.9.5">
+        <fix-replace
+            description="Change to 2.9.5"
+            family="Update versions"
+            oldString="2.7.5"
+            replacement="2.9.5"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="48"
+            column="21"
+            startOffset="1317"
+            endLine="48"
+            endColumn="70"
+            endOffset="1366"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-ui-ktx than 2.7.5 is available: 2.9.5">
+        <fix-replace
+            description="Change to 2.9.5"
+            family="Update versions"
+            oldString="2.7.5"
+            replacement="2.9.5"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="49"
+            column="21"
+            startOffset="1389"
+            endLine="49"
+            endColumn="64"
+            endOffset="1432"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.work:work-runtime-ktx than 2.9.0 is available: 2.10.5">
+        <fix-replace
+            description="Change to 2.10.5"
+            family="Update versions"
+            oldString="2.9.0"
+            replacement="2.10.5"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="50"
+            column="21"
+            startOffset="1455"
+            endLine="50"
+            endColumn="57"
+            endOffset="1491"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.recyclerview:recyclerview than 1.3.2 is available: 1.4.0">
+        <fix-replace
+            description="Change to 1.4.0"
+            family="Update versions"
+            oldString="1.3.2"
+            replacement="1.4.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="53"
+            column="21"
+            startOffset="1640"
+            endLine="53"
+            endColumn="61"
+            endOffset="1680"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.3.0">
+        <fix-replace
+            description="Change to 1.3.0"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.3.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="58"
+            column="32"
+            startOffset="1874"
+            endLine="58"
+            endColumn="61"
+            endOffset="1903"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.7.0">
+        <fix-replace
+            description="Change to 3.7.0"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.7.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="59"
+            column="32"
+            startOffset="1937"
+            endLine="59"
+            endColumn="74"
+            endOffset="1979"/>
+    </incident>
+
+</incidents>
